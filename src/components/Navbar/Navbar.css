@@ -5,4 +5,18 @@
 
 .navbar {
     background-image: url(../assets/imagenes/background.webp);
+    padding-top: 7px;
+    padding-left: 1rem;
+}
+
+.categorias {
+    text-decoration: none;
+    color: white;
+}
+
+.carroCompras {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    margin-right: 1rem;
 }
