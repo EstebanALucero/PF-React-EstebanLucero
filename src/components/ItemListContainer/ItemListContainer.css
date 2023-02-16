@@ -1,0 +1,23 @@
+
+.TarjetaProductos {
+    margin-top: 1rem;
+    width: 100vw;
+}
+
+.contenedorItem {
+    border: 2px solid black;
+    width: 16.5rem;
+    height: 30rem;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.imgProducto {
+    width: 240px;
+    height: 330px;
+}
+
+.botom {
+    background-color: brown;
+}

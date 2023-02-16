@@ -1,9 +1,33 @@
-
+import { useEffect, useState } from "react"
+import ItemList from "../../ItemList/ItemList"
+import { products } from "../productosLibreria"
+import "./ItemListContainer.css"
 
 const ItemListContainer = (props) => {
-  return (
-    <div><h3>Bienvenido {props.usuario} a ReLoad su biblioteca web. Muchas gracias por su visita.</h3></div>
-  )
+  
+const [items, setItems] = useState( [] )
+
+useEffect( ()=>{
+  const task = new Promise((res, rej) => {
+    res(products)
+  });
+
+  task
+    .then((res) => {
+      setItems( res )
+    })
+    .catch(() => {
+      console.log( "Se produjo un error." )
+    });
+
+}, []);
+
+return (
+  <>
+  <ItemList items={items}/>
+  </>
+);
+
 }
 
 export default ItemListContainer

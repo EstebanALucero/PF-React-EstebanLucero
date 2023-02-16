@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom"
+
 const Categoria = (props)=> {
     return (
-        <li><h3><a className="categorias" href={props.referencia}>{props.categoria}</a></h3></li>
+        <li>
+            <h3>
+                <Link to={props.referencia} className="categorias">{props.categoria}</Link>
+            </h3>
+        </li>
     )
 }
 
