@@ -10,11 +10,11 @@ const Navbar = ()=> {
             <Link to="/"><h1 style={ {color: "#F02624", fontFamily: "Ubuntu"} }>ReLoad</h1></Link>
             <div><ul style={ {display: "flex", justifyContent: "space-around"} }>
                 <Categoria referencia="/" categoria="Todos"/>
-                <Categoria categoria="Libros"/>
-                <Categoria categoria="Comics"/>
-                <Categoria categoria="Mangas"/>
+                <Categoria referencia="/category/Libro" categoria="Libros"/>
+                <Categoria referencia="/category/Comic" categoria="Comics"/>
+                <Categoria referencia="/category/Manga" categoria="Mangas"/>
             </ul></div>
-            <CartWidget cantidad="11"/>
+            <CartWidget referencia="/cart"/>
         </div>
     )
 }
